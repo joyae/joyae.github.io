@@ -21,6 +21,7 @@ description: For Data science
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  RecoSys: "recosys"
   Resources:
     - Github : "https://github.com/joyae"
     
