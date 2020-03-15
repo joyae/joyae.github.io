@@ -19,13 +19,13 @@ To get a clear and deep understanding of this new complicated situation for busi
 
 ### My interests
 
-My interest is in `Recommender System` and `Natural Language Processing`.
+My interest is in **Recommender System** and **Natural Language Processing**.
 
 Since more varied products and services come out on market, and much easier to reach them via online,
 We(especially me) are getting tired of making tons of choices in our dailylives.
-For that, `Recommender System` can be a strong tool for us and even for the company.
+For that, **Recommender System** can be a strong tool for us and even for the company.
 
-And `Natural Language Processing` is important, because the data isn't just numbers.
+And **Natural Language Processing** is important, because the data isn't just numbers.
 It can be the news, our reviews about products or our online comments.
 Dealing these texts(unstructured data) with NLP techniques is needed and must be based.
 
