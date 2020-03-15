@@ -41,7 +41,7 @@ For details, I recommend you to visit my [linkedin](https://www.linkedin.com/in/
   * 스팸문자 분류 알고리즘 구현
   * PMF recommendation model을 이용한 책 추천시스템 구현
   
-## Awards
+### Awards
 * 2019 빅콘테스트 챔피언리그 최우수상(NCSOFT상)
   * 잔존가치를 고려한 게임 유저 이탈 예측 모형 개발
 * 2019 Samsung SDS Brightics Academy 데이터 분석 부문 1위 수상
@@ -49,7 +49,7 @@ For details, I recommend you to visit my [linkedin](https://www.linkedin.com/in/
 * 2016 SK청년비상 창업경진대회 우수상
   * 연세대학교 지음(구.십시일밥)의 새로운 브랜딩 및 BM(컵홀더 광고) 기획
   
-## Skill
+### Skill
 * Python
 * SQL
 * R
