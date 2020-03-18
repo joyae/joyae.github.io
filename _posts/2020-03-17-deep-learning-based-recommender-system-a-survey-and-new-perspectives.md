@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Recosys-Deep Learning Based Recommender System: A Survey and New Perspectives
+title: Deep Learning Based Recommender System: A Survey and New Perspectives
 subtitle: paper review
 tags: [recommender system]
 comments: true
