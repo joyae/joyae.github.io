@@ -1,0 +1,20 @@
+---
+layout: post
+title: One Sample T-Test, Paired Sample T-Test, Independent sample T-Test
+subtitle: with python
+comments: true
+tags [statistics]
+---
+
+## Types of t-test
+
+> t-test는 기본적으로 두 집단 간의 **평균**을 비교하는 검정 방법이다.
+
+t-test에는 크게 세 가지 종류가 있다.
+어떤 연구 문제를 다루고 있냐에 따라 활용해야하는 t-test가 다르다.
+
+1. One sample t-test(단일표본 t검정): 하나의 표본집단의 평균과 기준값(ex. 모집단의 평균, 특정값) 간의 차이에 대한 검정(mean of a single group against a known mean)
+2. Paired sample t-test(대응표본 t검정): 하나의 표본집단 기준, 기존 평균과 어떠한 요소에 의해 변화된 평균 간의 차이에 대한 검정(means from the same group at different times)
+3. Independent sample t-test(Two sample t-test; 독립표본 t검정): 독립적인 두 표본집단의 평균 간의 차이에 대한 검정(means for two groups)
+
+## One sample t-test
