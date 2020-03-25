@@ -1,0 +1,19 @@
+---
+layout: post
+title: T-Test(t-검정)(2)
+subtitle: paired t-test
+comments: true
+tags: [statistics]
+---
+이 포스트는 이상엽 교수님의 수업과 독학한 내용에 기반하여 작성하였습니다.
+
+t-test 관련 포스트
+* [one sample t-test](https://joyae.github.io/2020-03-19-ttest/)
+* paired sample t-test
+* Independent sample t-test(two sample t-test)
+
+# Paired t-test
+
+### When to use
+### Assumptions
+### How to use in Python
