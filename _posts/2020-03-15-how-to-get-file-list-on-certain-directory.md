@@ -2,7 +2,7 @@
 layout: post
 title: 특정 경로의 파일리스트 가져오기(listdir)
 subtitle: os.listdir()
-tags: [code]
+tags: [python]
 comments: true
 ---
 

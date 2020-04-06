@@ -2,7 +2,7 @@
 layout: post
 title: How to download files at once on jupyter notebook
 subtitle: Jupyter Notebook에서 파일 한번에 다운로드하는 방법
-tags: [code]
+tags: [python]
 comments: true
 ---
 

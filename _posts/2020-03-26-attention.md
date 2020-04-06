@@ -3,7 +3,7 @@ layout: post
 title: Attention
 subtitle: Attention 이해하기
 comments: true
-tags: [study]
+tags: [study, NLP]
 ---
 
 Attention 논문과 사람들의 페이퍼 리뷰를 읽어도 와닿지 않던 개념이   
