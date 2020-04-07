@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Spotify Music Recommendation System(1)
-subtitle: study
 tags: [recommender system, spotify, CNN]
 comments: true
 ---
