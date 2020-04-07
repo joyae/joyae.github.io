@@ -16,6 +16,8 @@ comments: true
 
 # Spotify
 
+![spotify](https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg){: .center-block :}
+
 지금은 Youtube Music을 사용하고 있지만, 예전에 잠시 Spotify를 사용한 경험이 있다. 우선 내가 주로 듣는 노래들이 해외 팝송인데, 멜론에서 일반인 DJ들이 만들어놓은 팝송 플레이리스트에는 주로 이미 유명한 메이저 가수들밖에 없었다. 당시 Youtube의 추천알고리즘을 통해 톡톡히 재미를 보고 있었던터라, 한번 음악계의 유투브라고 불리는 Spotify를 쓰고싶었다. 한국에서 spotify 서비스를 이용하기 위해서는 조금 귀찮은 방법을 써야했지만, Spotify는 신세계였다. 내 취향의 노래들이 추천된다는 것이 확실히 느껴졌다. 과연 Spotify는 어떠한 추천시스템을 쓰고 있을까?
 
 이 [포스트]('https://benanne.github.io/2014/08/05/spotify-cnns.html')는 뉴욕 Spotify에서 인턴을 하며 *CNN을 활용한 content-based music recommendation* 을 작업한 사람이 자신의 접근 방법과 결과에 대해서 얘기한다. 이 포스트의 주된 내용에 대해 여기 정리해보고자 한다.
