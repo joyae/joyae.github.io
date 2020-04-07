@@ -60,7 +60,7 @@ Spotify는 기존에 **collaborative filtering 방법** 을 통해 추천했다.
 
 위는 저자가 시도한 모델의 예이다. 4개의 convolutional layers와 3개의 dense layers가 있다. **이 CNN 모델 구조에서 특히 중요한 것은 audio 데이터에 적합하게 설계되었기 때문에, 기존 image data를 다루는 computer vision에서의 CNN과 다른 점들이 있다는 것이다.**
 
-모델의 input은 599 framesdhk 128 frequency bins로 이루어진 mel-spectrograms로 이루어져 있다.
+모델의 input은 599 frames와 128 frequency bins로 이루어진 mel-spectrograms로 이루어져 있다.
 
 < 기존 image data를 다루는 CNN과 다른 점 >
 * input에서 두 축은 다른 정보를 담고 있다. 현재 모델에서 input의 가로는 frequency(주파수), 세로는 frames(혹은 time, 시간)을 나타낸다.
