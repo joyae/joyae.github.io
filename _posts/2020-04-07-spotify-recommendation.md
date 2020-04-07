@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spotify Music Recommendation System(1)
-tags: [recommender system, spotify, CNN]
+tags: [recommender system, spotify, CNN, collaborative filtering, content-based recommendation, deep learning]
 comments: true
 ---
 > Spotify의 음악 추천 알고리즘은 어떨까?
@@ -44,7 +44,7 @@ Spotify는 기존에 **collaborative filtering 방법** 을 통해 추천했다.
 
 이 접근 방법의 중요 아이디어는 많은 collborative filtering 모델들이 청취자와 음악을 모두를 a shared low-dimensional latent space에 projecting 하는 식으로 작동된다는 것이다. 이 space에서의 음악의 위치는 음악 취향에 영향을 주는 모든 정보를 담고 있다. 만약 이 space에서 두 노래가 가까이 위치한다면, 두 노래는 아마도 비슷할 것이다. 만약 한 노래가 한 사용자에게 가까이 위치한다면, 사용자가 그 노래를 아직 듣지 않았다는 가정 하에 해당 노래는 그 사용자에 좋은 추천곡이 될 것이다. 즉 저자의 딥러닝 모델을 통해, 과거 이용 데이터에 의존하지 않고, 이 space에서 음악이 어디에 위치할지 예측하여 사용자에게 음악을 추천해줄 수 있다.
 
-## Scaling up
+## About The Deep Learning Model
 
 해당 논문에서 사용된 deep neural network는 2개의 convolutional layer와 2개의 fully connected layer를 가지고 있다. 모델을 train하는 input은 audio의 3초 단위 조각들의 spectrograms로 이루어져있다(spectrograms of 3 second fragments of audio; window of 3 seconds sampled randomly from the audio clips). 그리고 더 긴 audio clip을 가지고 prediction을 할 때는, 긴 audio clip을 3초 windows로 분할한 후에 이 분할된 windows로 부터 얻은 각각의 predictions을 평균내서 사용한다.
 
@@ -53,3 +53,29 @@ Spotify는 기존에 **collaborative filtering 방법** 을 통해 추천했다.
 ![spectrogram](https://upload.wikimedia.org/wikipedia/commons/c/c5/Spectrogram-19thC.png){: .center-block :}
 
 저자는 운이 좋게도 Spotify에서 일하면서 큰 사이즈의 음악 데이터와 수많은 collaborative filtering 모델들에서 얻은 다양한 latent factor representations를 사용할 수 있었다. 또한 GPU도 사용할 수 있었어서 논문보다 더 scaling up한 연구를 할 수 있었다고 한다.
+
+### 1. Architecture - 모델의 구조
+
+![CNN architecture](https://benanne.github.io/images/spotify_convnet.png){: .center-block :}
+
+위는 저자가 시도한 모델의 예이다. 4개의 convolutional layers와 3개의 dense layers가 있다. **이 CNN 모델 구조에서 특히 중요한 것은 audio 데이터에 적합하게 설계되었기 때문에, 기존 image data를 다루는 computer vision에서의 CNN과 다른 점들이 있다는 것이다.**
+
+모델의 input은 599 framesdhk 128 frequency bins로 이루어진 mel-spectrograms로 이루어져 있다.
+
+< 기존 image data를 다루는 CNN과 다른 점 >
+* input에서 두 축은 다른 정보를 담고 있다. 현재 모델에서 input의 가로는 frequency(주파수), 세로는 frames(혹은 time, 시간)을 나타낸다.
+  * 그래서 저자는 모델 설계시, 모든 convolution을 1차원으로 만들었다. frequency dimension이 아닌 time dimension에서만 convolution이 실행되도록 하기 위해서다.
+  * 물론 기술적으로 두 축 모두에서 convolution을 실행하는 것이 가능하지만, 저자는 현 모델에서는 그렇게 하지 않았다.
+  * image data를 다루는 CNN에서 image data의 두 축은 같은 정보를 담고 있다(ex. 각 위치의 픽셀의 RGB 컬러).
+
+### 2. Training - 모델 학습
+
+### 3. Variations - 다양한 시도들
+
+## 모델 분석 - Deep Learning Model은 무엇을 학습하는가?
+
+< 추후 참고할 Materials >
++ <http://benanne.github.io/research/>
++ <http://www.slideshare.net/erikbern/music-recommendations-mlconf-2014>
++ <http://erikbern.com/>
++ <http://www.slideshare.net/MrChrisJohnson/algorithmic-music-recommendations-at-spotify>
