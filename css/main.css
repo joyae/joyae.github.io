@@ -470,6 +470,7 @@ footer .theme-by {
   text-shadow: 1px 1px 3px #000;
 }
 .intro-header .page-heading h1 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-top: 0;
   font-size: 30px;
 }
@@ -477,7 +478,14 @@ footer .theme-by {
   margin-top: 0;
   font-size: 30px;
 }
-.intro-header .page-heading .page-subheading,
+.intro-header .page-heading .page-subheading {
+  font-size: 27px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 10px 0 0;
+}
 .intro-header .post-heading .post-subheading {
   font-size: 27px;
   line-height: 1.1;
