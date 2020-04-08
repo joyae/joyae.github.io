@@ -76,6 +76,8 @@ Spotify는 기존에 **collaborative filtering 방법** 을 통해 추천했다.
 
 ## 🌲모델 분석 - Deep Learning Model은 무엇을 학습하는가?
 
+---
+
 < 추후 참고할 Materials >
 + <http://benanne.github.io/research/>
 + <http://www.slideshare.net/erikbern/music-recommendations-mlconf-2014>
