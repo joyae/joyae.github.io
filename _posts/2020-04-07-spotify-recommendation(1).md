@@ -6,13 +6,11 @@ comments: true
 ---
 > Spotify의 음악 추천 알고리즘은 어떨까?
 
-```
 딥러닝 기반 음악 추천 프로젝트를 진행하기 전, 교수님께서 건네주신 읽어볼 material 리스트를 읽어보는데 흥미로운 포스트가 있어 정리 겸 공유하고자 한다. 이 글은 먼저 해당 [포스트]('https://benanne.github.io/2014/08/05/spotify-cnns.html')를 참고했음을 밝힌다.
 
 * Key insights of this article
   * Music recommendation에서 audio signal을 어떻게 활용할 수 있는지
   * audio signal data를 가지고 CNN을 진행할 때 어떤 점을 유의해야하는지
-```
 
 ---
 
