@@ -6,11 +6,13 @@ comments: true
 ---
 > Spotify의 음악 추천 알고리즘은 어떨까?
 
+```
 딥러닝 기반 음악 추천 프로젝트를 진행하기 전, 교수님께서 건네주신 읽어볼 material 리스트를 읽어보는데 흥미로운 포스트가 있어 정리 겸 공유하고자 한다. 이 글은 먼저 해당 [포스트]('https://benanne.github.io/2014/08/05/spotify-cnns.html')를 참고했음을 밝힌다.
 
 * Key insights of this article
   * Music recommendation에서 audio signal을 어떻게 활용할 수 있는지
   * audio signal data를 가지고 CNN을 진행할 때 어떤 점을 유의해야하는지
+```
 
 ---
 
@@ -29,10 +31,12 @@ comments: true
 
 Spotify는 기존에 **collaborative filtering 방법** 을 통해 추천했다. collborative filtering 방법은 사용자들의 과거 서비스 아용 데이터를 통해 사용자들의 취향을 알아낸다. 만약 두 사용자가 서로 정말 비슷한 노래들은 듣는다면, 그들의 취향은 비슷할 것이다. 반대로 만약 두 노래가 같은 그룹의 사용자들에게 많이 재생된다면, 그 두 노래는 아마도 비슷할 것이다. 이러한 정보들이 추천에 쓰이는 것이다. Pure collaborative filtering 방법은 추천되는 item에 대한 정보를 이용하지 않는다. 이러한 접근법은 같은 모델이 책을 추천하기도, 영화를 추천하기도 혹은 음악을 추천할 수도 있으므로 다양한 분야에 접목하는 것을 도와준다. 그러나 이는 큰 단점이 될 수 있다.
 
+```
 < CF의 단점 >
 * 과거 이용 데이터에 의존하면, 이용 데이터가 많은 인기있는 item들만 주로 추천되므로 다양한 추천이 힘들어진다.
 * 비슷한 이용 데이터를 지니지만, 이질적인 content를 지닌 item들이 있어 이용 데이터만 고려하면 잘못된 추천을 할 수 있다.
 * 과거 이용 데이터에 의존하므로, 새로운 노래나 비인기 노래들이 추천되지 않는다. 이는 cold-start 문제라고 불린다.
+```
 
 이 단점들을 보완할 수 있는 방법은 **content-based recommendation** 으로, 추천되는 item, 여기서는 음악에 대한 정보가 활용되는 추천 방법이다. 저자는 특히 음악의 audio signal에 집중했다.
 
@@ -86,26 +90,30 @@ convolutional layer 사이 사이에는 **max-pooling operations**(MP)가 진행
 
 이 후에 2048 ReLU를 지닌 **fully connected layer** 로 연결된다. 모델에서는 이 layer가 2개가 사용되었다. 마지막 layer는 **output layer** 로, vector_exp 알고리즘(Spotify에서 사용되는 collaborative filtering 알고리즘 중 하나)을 통해 얻은 40 latent factors를 예측한다.
 
+```
 < 기존 image data를 다루는 CNN과 다른 점 >
 * input에서 두 축은 다른 정보를 담고 있다. 현재 모델에서 input의 가로는 frequency(주파수), 세로는 frames(혹은 time, 시간)을 나타낸다.
   * image data를 다루는 CNN에서 image data의 두 축은 같은 정보를 담고 있다(ex. 각 위치의 픽셀의 RGB 컬러).
   * 그래서 저자는 모델 설계시, 모든 convolution을 1차원으로 만들었다. frequency dimension이 아닌 time dimension에서만 convolution이 실행되도록 하기 위해서다.
   * 물론 기술적으로 두 축 모두에서 convolution을 실행하는 것이 가능하지만, 저자는 현 모델에서는 그렇게 하지 않았다.
-
 * audio signal에서 특징값들의 절대적인 위치는 사실상 중요하지 않기 때문에, global max pooling이 가능하다.
   * image data에서는 특징값들의 위치가 중요하다. 예를 들어, 이미지의 상단 쪽을 보고 구름을 예측할테지만 아래 쪽에서는 양의 하얀 털이 될 수 있다.
+```
 
 ### 2. Training - 모델 학습
 
 모델은 기존 spotify의 collaborative filtering 모델로 얻은 latent factor vectors와 predictions 간의 mean squared error가 최소화되도록 학습되었다. 먼저 latent factor vectors는 unit norm을 가지도록 normalize 되었다. 왜냐하면 음악의 popularity가 지닌 영향을 줄이기 위해서다. 많은 collborative filtering 모델에서 latent factor의 norms는 음악의 popularity와 연관이 있는 것으로 나타났다. 그리고 regularization에 활용된 dense layer에서 dropout이 사용되었다.
 
 ### 3. Variations - 가능한 시도들
+
+```
 1. 더 많은 layer 추가
 2. ReLU 대신 다른 activation 함수(ex. maxout units)
 3. Max-pooling 대신 stochastic pooling
 4. output layer에서 L2 normalization 활용
 5. spectrogram을 시간에 따라 늘리거나 압축하는 식의 data augmentation
 6. 다른 collborative filtering 모델에서 얻은 다수의 latent factor vectors를 concat하여 사용
+```
 
 ## 🌲모델 분석 - 여기서 Deep Learning Model은 무엇을 학습하는가?
 
