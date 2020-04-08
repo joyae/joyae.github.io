@@ -117,6 +117,15 @@ convolutional layer 사이 사이에는 **max-pooling operations**(MP)가 진행
 
 ## 🌲모델 분석 - 여기서 Deep Learning Model은 무엇을 학습하는가?
 
+첫번째 convolutional filtering layer의 filters를 시각화하면 아래와 같다.
+
+![Visualization of the filters learned in the first convolutional layer](https://benanne.github.io/images/filters_hires.png)
+
+자세히 보면 각각의 filter들은 4 frames 너비로 굵은 붉은색 세로선으로 구분되어 있다. filter 속 파란색은 양수를, 빨간색은 음수를, 흰색은 0을 나타낸다.
+이 시각화를 통해, filter들이 harmonic content(고조파.. 주파수의 성분이라고만 이해했다.)를 담고 있다는 것을 알 수 있다. 그리고 pitch의 높낮이와 사람의 목소리 또한 탐지함을 알 수 있었다고 한다.
+
+첫번째 convolutional filtering layer에서는 256개의 filter가 있는데, 저자는 흥미롭게도 각 filter를 maximally activate하는 노래들을 Spotify에서 찾아 각 filter가 어떤 feature를 담아내고 있는지 알려준다. **Spotify** 가 현재 우리나라에서 서비스되고 있지 않아, 접근할 수 없다고 나오지만 VPN을 활용해서 들어볼 수 있다.
+
 
 ---
 
