@@ -126,7 +126,7 @@ convolutional layer 사이 사이에는 **max-pooling operations**(MP)가 진행
 
 여기서부터가 개인적으로 제일 재밌는 지점이다.
 
-##### lower-level
+#### lower-level
 
 첫번째 convolutional filtering layer에서는 256개의 filter가 있는데, 저자는 흥미롭게도 각 filter를 maximally activate하는 노래들을 Spotify에서 찾아 각 filter가 어떤 feature를 담아내고 있는지 알려준다. **Spotify** 가 현재 우리나라에서 서비스되고 있지 않아, 접근할 수 없다고 나오지만 VPN을 활용해서 들어볼 수 있다. 14번, 242번, 250번, 253번 filter를 예시로 보여주는데, 각각의 filter는 vibrato singing/ringing ambience/vocal thirds/bass drum sounds의 feature를 담아낸다는 것을 느낄 수 있었다. 다만 playlists에 담긴 노래들은 장르가 제각각이었는데, 이는 첫번째 convolutional filtering layer의 filters가 low-level 특징을 담아낸다는 것으로 유추할 수 있다. 그리고 본 포스트로 가면 각 filter들의 시각화된 이미지들도 있으므로 비교하면서 확인해볼 수 있다.
 
@@ -137,11 +137,11 @@ convolutional layer 사이 사이에는 **max-pooling operations**(MP)가 진행
 
 저자는 두 가설 중, 두번째 가설은 모델이 학습하기에 더 어려울 것이므로 첫번째 가설이 적절할 것이라 예상한다.
 
-##### higher-level
+#### higher-level
 
 모델 구조에서 점점 더 뒤로 갈 수록, 이전 layer에서 학습된 feature representation에서 higher-level features들이 추출된다. output layer 바로 직 전의 fully-connected layer에서 학습된 filter들은 특정 서브 장르를 선별하여 담고 있는 것으로 나타났다. 그리고 흥미롭게도 몇몇 filter들은 2개 이상의 음악 스타일을 담고 있는 것으로 보였다. 아마도 다른 filter랑 합쳐졌을 때, 차이를 가지는 것으로 보인다. 그리고 특정 filter의 playlist는 중국 노래를 담고 있었는데, 이 filter는 중국 언어를 인식하는 것으로 보였다. 이 외에도 Spanish 랩을 인식하는 듯한 filter가 존재했다.
 
-##### Similarity-based playlists
+#### Similarity-based playlists
 
 모델을 통해 예측된 latent factor vectors를 가지고 비슷한 소리를 지닌 음악들을 찾는데 쓸 수 있다. 저자는 이 방법을 통해 한 노래의 factor vector을 예측하고, 코사인 거리를 활용해 이와 비슷한 factor vectors를 가진 노래들을 묶어 playlist를 만들었다. 즉 여기서 첫번째 track은 하나의 query인 셈이다.
 
@@ -154,6 +154,6 @@ convolutional layer 사이 사이에는 **max-pooling operations**(MP)가 진행
 < 추후 참고할 Materials >
 + 이 포스트 저자의 <http://benanne.github.io/research/>
 + <http://www.slideshare.net/erikbern/music-recommendations-mlconf-2014>
-+ <http://erikbern.com/> (저자의 supervisor였ㄷ너 Erik Bernhardsson의 블로그)
++ <http://erikbern.com/> (저자의 supervisor였던 Erik Bernhardsson의 블로그)
 + <http://www.slideshare.net/MrChrisJohnson/algorithmic-music-recommendations-at-spotify>
 + <https://towardsdatascience.com/getting-to-know-the-mel-spectrogram-31bca3e2d9d0> (Mel-Spectrogram에 대한 포스트)
