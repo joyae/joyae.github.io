@@ -124,8 +124,30 @@ convolutional layer 사이 사이에는 **max-pooling operations**(MP)가 진행
 자세히 보면 각각의 filter들은 4 frames 너비로 굵은 붉은색 세로선으로 구분되어 있다. filter 속 파란색은 양수를, 빨간색은 음수를, 흰색은 0을 나타낸다.
 이 시각화를 통해, filter들이 harmonic content(고조파.. 주파수의 성분이라고만 이해했다.)를 담고 있다는 것을 알 수 있다. 그리고 pitch의 높낮이와 사람의 목소리 또한 탐지함을 알 수 있었다고 한다.
 
-첫번째 convolutional filtering layer에서는 256개의 filter가 있는데, 저자는 흥미롭게도 각 filter를 maximally activate하는 노래들을 Spotify에서 찾아 각 filter가 어떤 feature를 담아내고 있는지 알려준다. **Spotify** 가 현재 우리나라에서 서비스되고 있지 않아, 접근할 수 없다고 나오지만 VPN을 활용해서 들어볼 수 있다.
+여기서부터가 개인적으로 제일 재밌는 지점이다.
 
+##### lower-level
+
+첫번째 convolutional filtering layer에서는 256개의 filter가 있는데, 저자는 흥미롭게도 각 filter를 maximally activate하는 노래들을 Spotify에서 찾아 각 filter가 어떤 feature를 담아내고 있는지 알려준다. **Spotify** 가 현재 우리나라에서 서비스되고 있지 않아, 접근할 수 없다고 나오지만 VPN을 활용해서 들어볼 수 있다. 14번, 242번, 250번, 253번 filter를 예시로 보여주는데, 각각의 filter는 vibrato singing/ringing ambience/vocal thirds/bass drum sounds의 feature를 담아낸다는 것을 느낄 수 있었다. 다만 playlists에 담긴 노래들은 장르가 제각각이었는데, 이는 첫번째 convolutional filtering layer의 filters가 low-level 특징을 담아낸다는 것으로 유추할 수 있다. 그리고 본 포스트로 가면 각 filter들의 시각화된 이미지들도 있으므로 비교하면서 확인해볼 수 있다.
+
+저자는 앞선 방법과 달리 노래들에 각 filter들을 시간에 따라 average activation을 한 후, 가장 maximum을 지닌 노래를 찾아 playlists를 만들었다. 즉 이 방법에서 찾은 노래들은 filter가 30초 간격으로 지속적으로 active하다는 것을 의미한다. 이 방법은 좀더 harmonic patterns를 탐지하는데 유용하다. 여기서 예시로 나온 filter들은 특정 pitch와 코드들을 탐지하도록 학습되었다. 청취자의 취향에 특정 pitch나 코드가 영향을 끼치지 않을 것이라고 우리는 생각하지만, 왜 filter들이 이렇게 학습되었을지 저자는 두 가지 가설을 낸다.
+
+1. 첫 번째는 모델이 harmonicity를 탐지하도록 학습하기 때문에 filter들이 다양한 종류의 harmonics를 학습한다는 것이다. 그리고 이 filter들은 higher level에서 다양한 pitch 사이 harmonicity를 탐지하도록 pooling된 것이다.
+2. 모델은 특정 음악 장르에서는 코드와 코드 진행 방법이 더 흔하기 떄문에 이를 학습하는 것이다.
+
+저자는 두 가설 중, 두번째 가설은 모델이 학습하기에 더 어려울 것이므로 첫번째 가설이 적절할 것이라 예상한다.
+
+##### higher-level
+
+모델 구조에서 점점 더 뒤로 갈 수록, 이전 layer에서 학습된 feature representation에서 higher-level features들이 추출된다. output layer 바로 직 전의 fully-connected layer에서 학습된 filter들은 특정 서브 장르를 선별하여 담고 있는 것으로 나타났다. 그리고 흥미롭게도 몇몇 filter들은 2개 이상의 음악 스타일을 담고 있는 것으로 보였다. 아마도 다른 filter랑 합쳐졌을 때, 차이를 가지는 것으로 보인다. 그리고 특정 filter의 playlist는 중국 노래를 담고 있었는데, 이 filter는 중국 언어를 인식하는 것으로 보였다. 이 외에도 Spanish 랩을 인식하는 듯한 filter가 존재했다.
+
+##### Similarity-based playlists
+
+모델을 통해 예측된 latent factor vectors를 가지고 비슷한 소리를 지닌 음악들을 찾는데 쓸 수 있다. 저자는 이 방법을 통해 한 노래의 factor vector을 예측하고, 코사인 거리를 활용해 이와 비슷한 factor vectors를 가진 노래들을 묶어 playlist를 만들었다. 즉 여기서 첫번째 track은 하나의 query인 셈이다.
+
+## 🌲결론
+
+해당 포스트는 2014녀 8월에 작성된 포스트로 이 방법이 지금 현재 2020년의 Spotify에 적용되었는지 궁금했다. 조금의 서칭을 해보니, 지금의 Spotify는 어느정도 노래의 특성을 추천시스템에 활용하고 있는 것으로 보인다! 노래 데이터가 있으면 한번 위에서 설명된 모델 아키텍처로 구현을 해보고 싶다. 그리고 특히 모델링을 떠나서 모델링 결과를 직접 뜯어보고 해석하고 나름의 가설을 세우는 과정이 인상에 남았다. 마무리가 강한 사람이 될 것!
 
 ---
 
