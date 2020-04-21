@@ -30,7 +30,7 @@ Pandora와 Spotify를 비교하는 포스트들
 # Music Genome Project
 이번 포스트에는 Pandora를 견인하고 있는 `Music Genome Project`에 대하여 공부한 것을 정리해보려고 한다.
 
-![Music Genome Project - About](https://joyae.github.io/images/pandora-about.png){: .center-block :}
+![Music Genome Project - About](https://joyae.github.io/img/pandora-about.png){: .center-block :}
 위는 Pandora 홈페이지에서 `Music Genome Project`에 대하여 간단히 설명하고 있는 글이다. 이에 따르면, Musicologist들로 이루어진 팀이 모든 시대 및 장르의 노래를 들으며 450개의 musical attributes를 분석했다고 한다.
 
 Scientific Computing에 실린 John R. Joyce 박사의 ['Pandora and the Music Genome Project: Song structure analysis tools facilitate new music discovery'](https://www.researchgate.net/publication/295343382_Pandora_and_the_music_genome_project_Song_structure_analysis_tools_facilitate_new_music_discovery)에 따르면, `Music Genome Project`는 2000년에 런칭되었고 5년이 지나서야 실용성을 지닌 데이터베이스를 구축했는데, 그 이유는 30명의 음악 전문가들이 노래를 일일이 들으며 그 450여개의 musical attributes를 분석했기 때문이라고 한다(!)
