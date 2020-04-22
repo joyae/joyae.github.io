@@ -7,8 +7,8 @@ subtitle: paper reviews, studies and projects
 # 2020
 
 ### Music Recommendation System
-* [Pandora - Music Genome Project]('https://joyae.github.io/2020-04-20-pandora-music-genome-project(1)/')
-* [Spotify - Music Recommendation System with CNN]('https://joyae.github.io/2020-04-07-spotify-recommendation(1)/')
+* [Pandora - Music Genome Project](https://joyae.github.io/2020-04-20-pandora-music-genome-project(1))
+* [Spotify - Music Recommendation System with CNN](https://joyae.github.io/2020-04-07-spotify-recommendation(1))
 
 
 # 2019
