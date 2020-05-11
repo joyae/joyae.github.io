@@ -11,11 +11,14 @@ Hi, there! My name is Yaelin Jo, a data scientist studying at Yonsei University.
 
 During my undergraduate years, I studied Business(or Business Administration) for my bachelor's degree.
 The most important thing I learned from that time was that **the business is a sum of choices**.
-Choices can be made based on someone's intuition, society's tradition or accumulated experiences.
-**However, I believe the data is the start of decision-making**.
+Choices can be made based on someone's intuition, accumulated experiences or just customary practice.
+**However, I believe the data must be the start of decision-making**.
 
-As time goes, this society transforms and gets more and more complicated.
-To get a clear and deep understanding of this new complicated situation for business, we need to read data.
+For a good decision, first, we need to define what the problem/situation is.
+And then we need to find what factor caused the problem/situation and try to find solutions. 
+However, as time goes, this society is evolving so fast that it is hard to get a grasp of these questions.
+**Nonetheless, the data has every answers.**
+**It truly lead us to get a clear and deep understanding of the new challanging situation we face.**
 
 ### My interests
 
