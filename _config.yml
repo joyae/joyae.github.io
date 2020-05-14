@@ -23,6 +23,7 @@ navbar-links:
   About Me: "aboutme"
   RecoSys: "recosys"
   NLP: "nlp"
+  Tags: "https://joyae.github.io/tags"
   Resources:
     - Github : "https://github.com/joyae"
     
