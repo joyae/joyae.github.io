@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spotify Music Recommendation System(1)
-tags: [recommender system, spotify, CNN, collaborative filtering, content-based recommendation, deep learning]
+tags: [spotify, CNN, Collaborative filtering recommendation, content-based recommendation, recommendation]
 comments: true
 ---
 > Spotify의 음악 추천 알고리즘은 어떨까?
