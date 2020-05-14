@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Pandora's Music Genome Project(1)
-tags: [recommender system, pandora, music, recommendation]
+tags: [recommendation, pandora, music]
 ---
 > Spotify 이전, 음악 개인화 추천의 시작이었던 Pandora
 
-![Pandora](https://upload.wikimedia.org/wikipedia/commons/7/76/Pandora_Wordmark_2016_RGB.png){: .center-block :}
 # Pandora
+![Pandora](https://upload.wikimedia.org/wikipedia/commons/7/76/Pandora_Wordmark_2016_RGB.png){: .center-block :}
 
 글로벌 음악 스트리밍 서비스 중, 가장 인기가 많은 서비스는 `Spotify`지만 Apple Music, Soundcloud, Amazon Music Unlimited 등 다양한 서비스가 존재한다.
 
