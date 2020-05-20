@@ -18,8 +18,8 @@ subtitle: studies, projects and paper reviews
 ---
 
 # Projects
-* PMF Model with Book-Crossing Dataset
-* Predicting Online Shopping Behavior from Clickstream Data
+* [PMF Model with Book-Crossing Dataset](https://github.com/joyae/Probabilistic-Matrix-Factorization)
+* [Predicting Online Shopping Behavior from Clickstream Data](https://github.com/2020Recosys/Recosys_Project)
 
 ---
 
