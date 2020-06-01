@@ -6,7 +6,7 @@ comments: true
 ---
 > Spotify의 음악 추천 알고리즘은 어떨까?
 
-딥러닝 기반 음악 추천 프로젝트를 진행하기 전, 교수님께서 건네주신 읽어볼 material 리스트를 읽어보는데 흥미로운 포스트가 있어 정리 겸 공유하고자 한다. 이 글은 먼저 해당 [포스트]('https://benanne.github.io/2014/08/05/spotify-cnns.html')를 참고했음을 밝힌다.
+딥러닝 기반 음악 추천 프로젝트를 진행하기 전, 교수님께서 건네주신 읽어볼 material 리스트를 읽어보는데 흥미로운 포스트가 있어 정리 겸 공유하고자 한다. 이 글은 먼저 해당 [포스트](https://benanne.github.io/2014/08/05/spotify-cnns.html)를 참고했음을 밝힌다.
 
 * Key insights of this article
   * Music recommendation에서 audio signal을 어떻게 활용할 수 있는지
@@ -20,7 +20,7 @@ comments: true
 
 지금은 Youtube Music을 사용하고 있지만, 예전에 잠시 Spotify를 사용한 경험이 있다. 우선 내가 주로 듣는 노래들이 해외 팝송인데, 멜론에서 일반인 DJ들이 만들어놓은 팝송 플레이리스트에는 주로 이미 유명한 메이저 가수들밖에 없었다. 당시 Youtube의 추천알고리즘을 통해 톡톡히 재미를 보고 있었던터라, 한번 음악계의 유투브라고 불리는 Spotify를 쓰고싶었다. 한국에서 spotify 서비스를 이용하기 위해서는 조금 귀찮은 방법을 써야했지만, Spotify는 신세계였다. 내 취향의 노래들이 추천된다는 것이 확실히 느껴졌다. 과연 Spotify는 어떠한 추천시스템을 쓰고 있을까?
 
-이 [포스트]('https://benanne.github.io/2014/08/05/spotify-cnns.html')는 뉴욕 Spotify에서 인턴을 하며 *CNN을 활용한 content-based music recommendation* 을 작업한 사람이 자신의 접근 방법과 결과에 대해서 얘기한다. 이 포스트의 주된 내용에 대해 여기 정리해보고자 한다.
+이 [포스트](https://benanne.github.io/2014/08/05/spotify-cnns.html)는 뉴욕 Spotify에서 인턴을 하며 *CNN을 활용한 content-based music recommendation* 을 작업한 사람이 자신의 접근 방법과 결과에 대해서 얘기한다. 이 포스트의 주된 내용에 대해 여기 정리해보고자 한다.
 
 ---
 
