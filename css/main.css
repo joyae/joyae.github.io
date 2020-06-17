@@ -8,8 +8,8 @@ layout: null
 /* --- General --- */
 
 body {
-  font-family: 'NanumSquare', 'Lora', 'Times New Roman', serif;
-  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'NanumSquare', 'Lora', 'Times New Roman', serif;
+  font-size: 16px;
   color: #404040;
   position: relative;
   background-color: {{ site.page-col }};
