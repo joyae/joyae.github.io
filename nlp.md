@@ -10,7 +10,7 @@ subtitle: studies, projects and paper reviews
 ---
 
 # Paper Reviews
-### NLP appraoch in Online Malicious Comments/Hate Speech
+### NLP approach in Online Malicious Comments/Hate Speech
 * [Hate Speech Detection with Comment Embeddings](https://dl.acm.org/doi/abs/10.1145/2740908.2742760)(2015)
 * [Toxic Comment Detection in Online Discussions](https://link.springer.com/chapter/10.1007/978-981-15-1216-2_4)(2020)
 * [Fighting Offensive Language on Social Media with Unsupervised Text Style Transfer](https://arxiv.org/abs/1805.07685)(2018)
