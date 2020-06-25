@@ -26,7 +26,7 @@ navbar-links:
   Tags: "https://joyae.github.io/tags"
   Resources:
     - Github : "https://github.com/joyae"
-    
+
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/surf_yaelin.jpeg"
@@ -70,11 +70,11 @@ author:
 social-network-links:
   rss: true
   email: "yaelinjo@gmail.com"
-  facebook: "https://www.facebook.com/yaelin.jo"
-  github: "https://github.com/joyae"
+  facebook: "yaelin.jo"
+  github: "joyae"
 #  twitter: daattali
 #  reddit: yourname
-  linkedin: "www.linkedin.com/in/yaelin-jo"
+  linkedin: "yaelin-jo"
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
