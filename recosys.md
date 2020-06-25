@@ -20,6 +20,7 @@ subtitle: studies, projects and paper reviews
 # Projects
 * [PMF Model with Book-Crossing Dataset](https://github.com/joyae/Probabilistic-Matrix-Factorization)
 * [Predicting Online Shopping Behavior from Clickstream Data](https://github.com/2020Recosys/Recosys_Project)
+* Melon Music Continuation(2020.06~)
 
 ---
 
@@ -39,6 +40,15 @@ subtitle: studies, projects and paper reviews
 
 ### Deep Learning Based
 * [Deep Neural Networks for YouTube Recommendations](https://dl.acm.org/doi/10.1145/2959100.2959190)(2016)
+
+### Automatic Music Continuation(Music Recommendation)
+* MMCF: Multimodal Collaborative Filtering for Automatic Playlist Continuation
+* Two-stage Model for Automatic Playlist Continuation at Scale
+* Artist-driven layering and user’s behaviour impact on recommendations in a playlist continuation scenario
+* Efficient Similarity Based Methods For The Playlist Continuation Task
+* Social Tags and Emotions as main Features for the Next Song To Play in Automatic Playlist Continuation
+* A Hybrid Recommender System for Improving Automatic Playlist Continuation
+* Consistency-Aware Recommendation for User-Generated Item List Continuation
 
 ---
 
