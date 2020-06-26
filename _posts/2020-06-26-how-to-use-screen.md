@@ -26,11 +26,13 @@ tags: [screen]
   screen -ls
   ```
 
+
 * screen session에 재접속하기
   ```
   # name은 들어가고자하는 해당 screen session 이름
   screen -r name
   ```
+
 
 * screen session 삭제하기
   ```
