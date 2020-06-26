@@ -12,30 +12,14 @@ tags: [screen]
 ---
 
 ## Code 정리
+(name은 해당 screen session 이름)
 
-* 새로운 screen session 만들어서 들어가기
-  ```
-  # name은 만들고자하는 해당 screen session 이름
-  screen -S name
-  ```
+* 새로운 screen session 만들어서 들어가기: `screen -S name`
 
 * 들어간 screen session에서 나오기: Ctrl + a + d
 
-* 현재 screen session 목록 확인
-  ```
-  screen -ls
-  ```
+* 현재 screen session 목록 확인: `screen -ls`
 
+* screen session에 재접속하기: `screen -r name`
 
-* screen session에 재접속하기
-  ```
-  # name은 들어가고자하는 해당 screen session 이름
-  screen -r name
-  ```
-
-   
-* screen session 삭제하기
-  ```
-  # name은 삭제하고자하는 해당 screen session 이름
-  screen -X -S name quit
-  ```
+* screen session 삭제하기: `screen -X -S name quit`
