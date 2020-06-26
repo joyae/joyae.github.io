@@ -33,7 +33,7 @@ tags: [screen]
   screen -r name
   ```
 
-
+   
 * screen session 삭제하기
   ```
   # name은 삭제하고자하는 해당 screen session 이름
