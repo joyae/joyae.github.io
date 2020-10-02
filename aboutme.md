@@ -15,16 +15,16 @@ Choices can be made based on someone's intuition, accumulated experiences or jus
 **However, I believe the data must be the start of decision-making**.
 
 For a good decision, first, we need to define what the problem/situation is.
-And then we need to find what factor caused the problem/situation and try to find solutions. 
+And then we need to find what factor caused the problem/situation and try to find solutions.
 However, as time goes, this society is evolving so fast that it is hard to get a grasp of these questions.
-**Nonetheless, the data has every answers.**
-**It truly lead us to get a clear and deep understanding of the new challanging situation we face.**
+**I believe the data is the key to solve this problem.**
+**It truly lead us to get a clearer and deeper understanding of the new challenging situation we face.**
 
 ### My interests
 
 My interest is in **Recommender System** and **Natural Language Processing**.
 
-Since more varied products and services come out on market, and much easier to reach them via online,
+Since more and more products and services come out on market, and much easier to reach them via online,
 We(especially me) are getting tired of making tons of choices in our dailylives.
 For that, **Recommender System** can be a strong tool for us and even for the company.
 
@@ -43,7 +43,7 @@ For details, I recommend you to visit my [linkedin](https://www.linkedin.com/in/
   * 텍스트 마이닝을 활용한 AI 스피커 브랜드별 사용자 여론 비교 분석
   * 스팸문자 분류 알고리즘 구현
   * PMF recommendation model을 이용한 책 추천시스템 구현
-  
+
 ### Awards
 * 2019 빅콘테스트 챔피언리그 최우수상(NCSOFT상)
   * 잔존가치를 고려한 게임 유저 이탈 예측 모형 개발
@@ -51,7 +51,7 @@ For details, I recommend you to visit my [linkedin](https://www.linkedin.com/in/
   * 제품 공정 불량률 예측 모형, 취식 브랜드 수요량 예측 모형 개발
 * 2016 SK청년비상 창업경진대회 우수상
   * 연세대학교 지음(구.십시일밥)의 새로운 브랜딩 및 BM(컵홀더 광고) 기획
-  
+
 ### Skill
 * Python
 * SQL
